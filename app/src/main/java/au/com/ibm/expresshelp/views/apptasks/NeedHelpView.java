@@ -141,7 +141,7 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
                 division.equals( NeedHelpData._defaultDivision ) ||
                 city.equals( NeedHelpData._defaultCity ) ){
 
-            Toast.makeText( this, _dataMissingError, Toast.LENGTH_LONG );
+            Toast.makeText( this, _dataMissingError, Toast.LENGTH_LONG ).show();
 
             return;
         }
@@ -186,7 +186,7 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
 
             _needHelpData.reset();
 
-            Toast.makeText( this, _response,  Toast.LENGTH_LONG );
+            Toast.makeText( this, _response,  Toast.LENGTH_LONG ).show();
         }
 
     }

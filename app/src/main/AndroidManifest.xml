@@ -24,6 +24,18 @@
         </activity>
 
         <activity
+            android:name=".views.apptasks.ProvideHelp"
+            android:label="@string/provide_help_view_header"
+            android:configChanges="orientation|screenSize">
+        </activity>
+
+        <activity
+            android:name=".views.apptasks.RegisterVolunteer"
+            android:label="@string/be_volunteer_view_header"
+            android:configChanges="orientation|screenSize">
+        </activity>
+
+        <activity
             android:name=".views.apptasks.SupportView"
             android:label="@string/support_view_header"
             android:configChanges="orientation|screenSize">
@@ -41,7 +53,7 @@
             android:configChanges="orientation|screenSize">
         </activity>
 
-        <activity android:name=".views.MainActivity"
+        <activity android:name=".views.apptasks.MainActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|screenSize">
             <intent-filter>

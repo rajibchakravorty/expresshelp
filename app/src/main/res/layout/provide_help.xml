@@ -13,8 +13,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_need_help"
-        android:id="@+id/btn_need_help"
+        android:text="@string/lbl_financial_help"
+        android:id="@+id/btn_financial_help"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -24,12 +24,26 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_provide_help"
-        android:id="@+id/btn_provide_help"
-        android:layout_below="@+id/btn_need_help"
+        android:text="@string/lbl_material_help"
+        android:id="@+id/btn_material_help"
+        android:layout_below="@+id/btn_financial_help"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="40dp"
-        android:layout_alignRight="@+id/btn_need_help"
-        android:layout_alignEnd="@+id/btn_need_help" />
+        android:layout_alignRight="@+id/btn_financial_help"
+        android:layout_alignEnd="@+id/btn_financial_help" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_become_volunteer"
+        android:id="@+id/btn_be_volunteer"
+        android:layout_below="@+id/btn_material_help"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/btn_material_help"
+        android:layout_alignEnd="@+id/btn_material_help" />
+
+
 </RelativeLayout>

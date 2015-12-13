@@ -52,7 +52,7 @@ public class SupportView extends BaseView{
         try{
             Context c = getApplicationContext();
 
-            InputStream is = c.getAssets().open( ExpressHelpApp._aboutPropertiesFile );
+            InputStream is = c.getAssets().open( ExpressHelpApp._supportPropertiesFile );
             Properties p = new Properties();
             p.load( is );
             _email = p.getProperty( _emailKey );

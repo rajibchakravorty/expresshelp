@@ -3,6 +3,8 @@
     <string name="app_name">Express Help</string>
     <string name="need_help_view_header">Need Express Help</string>
     <string name="need_relief_view_header">Relief Details</string>
+    <string name="provide_help_view_header">Provide Help</string>
+    <string name="be_volunteer_view_header">Relief Details</string>
     <string name="about_view_header">About Us</string>
     <string name="support_view_header">Support us</string>
 
@@ -57,6 +59,17 @@
 
 
     <string name="need_other_extra">describe anything else here</string>
+
+
+    <string name="lbl_financial_help">Provide Financial Help</string>
+    <string name="lbl_material_help">Provide Material Help</string>
+    <string name="lbl_become_volunteer">Become a volunteer</string>
+
+    <string name="lbl_start_date">Arrival/Start Date</string>
+    <string name="lbl_end_date">Departure/End Date</string>
+    <string name="accom_need">Require accommodation</string>
+    <string name="lbl_confirm_volunteer">Confirm</string>
+
 
 
     <string name="menu_main_page">Main Page</string>

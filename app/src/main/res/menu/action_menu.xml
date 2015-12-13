@@ -7,16 +7,6 @@
         android:title="@string/menu_main_page"
         android:showAsAction="collapseActionView"/>
 
-    <item android:id="@+id/action_need_help"
-        android:orderInCategory="102"
-        android:title="@string/menu_need_help"
-        android:showAsAction="collapseActionView"/>
-
-    <item android:id="@+id/action_provide_help"
-        android:orderInCategory="103"
-        android:title="@string/menu_provide_help"
-        android:showAsAction="collapseActionView"/>
-
     <item android:id="@+id/action_about"
         android:orderInCategory="104"
         android:title="@string/menu_aboutus"

@@ -77,7 +77,7 @@ public class NeedReliefView extends BaseView implements TaskReceiver {
         if( data == null ){
 
 
-            Toast.makeText(getApplicationContext(), _prepareDataError, Toast.LENGTH_LONG);
+            Toast.makeText(getApplicationContext(), _prepareDataError, Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -166,7 +166,7 @@ public class NeedReliefView extends BaseView implements TaskReceiver {
 
             _needHelpData.reset();
 
-            Toast.makeText( this, _response,  Toast.LENGTH_LONG );
+            Toast.makeText( this, _response,  Toast.LENGTH_LONG ).show();
         }
 
     }

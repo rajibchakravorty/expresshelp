@@ -1,4 +1,4 @@
-package au.com.ibm.expresshelp.views;
+package au.com.ibm.expresshelp.views.apptasks;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,12 +7,11 @@ import android.view.View;
 import android.widget.Button;
 
 import au.com.ibm.expresshelp.R;
-import au.com.ibm.expresshelp.views.apptasks.NeedHelpView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseView {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ehelp);
@@ -35,11 +34,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button provideHelp = ( Button ) findViewById( R.id.btn_provide_help );
+
+        provideHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                navigateToProvideHelpUI();
+
+
+            }
+        });
+
     }
 
     private void navigateToNeedHelpUI(){
 
         Intent intent = new Intent( MainActivity.this, NeedHelpView.class );
+        startActivity(intent);
+    }
+
+    private void navigateToProvideHelpUI(){
+
+        Intent intent = new Intent( MainActivity.this, ProvideHelp.class );
         startActivity(intent);
     }
 }
