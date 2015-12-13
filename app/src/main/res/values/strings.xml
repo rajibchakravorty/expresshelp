@@ -1,0 +1,73 @@
+<resources>
+
+    <string name="app_name">Express Help</string>
+    <string name="need_help_view_header">Need Express Help</string>
+    <string name="need_relief_view_header">Relief Details</string>
+    <string name="about_view_header">About Us</string>
+    <string name="support_view_header">Support us</string>
+
+    <string name="lbl_need_help">Need Help</string>
+    <string name="lbl_provide_help">Provide Help</string>
+
+    <string name="lbl_location">Your Location</string>
+    <string name="lbl_people_stats">Num of people affected</string>
+
+    <string name="hint_home_num">home number</string>
+    <string name="hint_street_name">stree name</string>
+    <string name="hint_division">division/locality</string>
+    <string name="hint_city">city</string>
+
+
+    <string name="hint_num_total_people">number of total people</string>
+    <string name="hint_num_seniors">number of old aged people</string>
+    <string name="hint_num_child">number of child</string>
+
+    <string name="lbl_need_rescue">Need Rescue</string>
+    <string name="lbl_need_relief">Need Relief</string>
+
+    <string name="lbl_need_relief_basic">Basic Needs</string>
+
+    <string name="need_food">Food</string>
+    <string name="need_water">Water</string>
+    <string name="need_clothes">Clothes</string>
+
+    <string name="lbl_need_relief_special">Other/Special Needs</string>
+
+    <string name="need_milk">Milk</string>
+    <string name="need_baby_food">Baby Food</string>
+
+
+
+    <string name="need_clothes_female">Female underwear</string>
+    <string name="need_clothes_male">Male underwear</string>
+    <string name="hint_special_needs">any other special needs?</string>
+
+    <string name="lbl_need_medicine">Medicine</string>
+    <string name="hint_medicine">details of medicine</string>
+
+
+    <string name="lbl_need_personal_cleanliness">Personal Health/Cleaning</string>
+
+
+    <string name="need_sanitary">Sanitary Pads</string>
+    <string name="need_baby_diapers">Baby Diapers</string>
+    <string name="need_soaps">Soaps</string>
+    <string name="need_hand_wash">Hand Wash</string>
+    <string name="need_phenyl">Phenyl</string>
+
+
+    <string name="need_other_extra">describe anything else here</string>
+
+
+    <string name="menu_main_page">Main Page</string>
+    <string name="menu_need_help">Need Help</string>
+    <string name="menu_provide_help">Provide Help</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_support">Support</string>
+
+    <string name="lbl_email">Our email</string>
+    <string name="lbl_phone">Our Phone</string>
+
+
+
+</resources>
