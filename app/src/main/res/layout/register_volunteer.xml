@@ -13,7 +13,7 @@
         android:id="@+id/btn_volun_start_date" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_start_date"
         android:textStyle="bold"
@@ -34,7 +34,7 @@
         android:id="@+id/btn_volun_end_date" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_end_date"
         android:textStyle="bold"
@@ -44,10 +44,37 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@id/btn_volun_end_date"/>
 
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accom_need"
+        android:id="@+id/chk_need_accommodation"
+        android:layout_below="@id/txt_end_date"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chk_need_accommodation"
+        android:orientation="vertical"
+        android:id="@+id/work_radios">
+        <RadioButton android:id="@+id/radio_alone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_alone" />
+        <RadioButton android:id="@+id/radio_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_team"
+            android:checked="true" />
+    </RadioGroup>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txt_end_date"
+        android:layout_below="@id/work_radios"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/lbl_confirm_volunteer"
         android:textStyle="bold"

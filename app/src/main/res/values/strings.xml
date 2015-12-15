@@ -4,7 +4,7 @@
     <string name="need_help_view_header">Need Express Help</string>
     <string name="need_relief_view_header">Relief Details</string>
     <string name="provide_help_view_header">Provide Help</string>
-    <string name="be_volunteer_view_header">Relief Details</string>
+    <string name="be_volunteer_view_header">Confirm your detail</string>
     <string name="about_view_header">About Us</string>
     <string name="support_view_header">Support us</string>
 
@@ -68,6 +68,8 @@
     <string name="lbl_start_date">Arrival/Start Date</string>
     <string name="lbl_end_date">Departure/End Date</string>
     <string name="accom_need">Require accommodation</string>
+    <string name="work_alone">Work Alone</string>
+    <string name="work_team">Work in a team</string>
     <string name="lbl_confirm_volunteer">Confirm</string>
 
 
@@ -80,7 +82,6 @@
 
     <string name="lbl_email">Our email</string>
     <string name="lbl_phone">Our Phone</string>
-
 
 
 </resources>

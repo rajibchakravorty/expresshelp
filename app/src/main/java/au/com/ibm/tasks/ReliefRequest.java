@@ -1,5 +1,7 @@
 package au.com.ibm.tasks;
 
+import android.util.Log;
+
 import org.json.JSONException;
 
 import java.io.IOException;
@@ -27,6 +29,8 @@ public class ReliefRequest extends AsyncServiceTask {
     protected String performTask(String... params) throws IOException, JSONException, URISyntaxException {
 
         String data = params[0];
+
+        Log.i("ReliefRequest", data);
         //String result = performPost( _url , data.toString(), null, null );
         return performPost( _url , data, null, null );
     }

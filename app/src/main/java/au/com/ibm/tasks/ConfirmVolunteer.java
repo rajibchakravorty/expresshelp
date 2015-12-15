@@ -10,17 +10,17 @@ import java.net.URISyntaxException;
 import au.com.ibm.asynctask.AsyncServiceTask;
 
 /**
- * Created by rajib on 12/12/15.
+ * Created by rajib on 15/12/15.
  */
-public class RescueRequest extends AsyncServiceTask{
+public class ConfirmVolunteer extends AsyncServiceTask {
 
-    public static String _rescueTaskID = "Rescue Task";
+    public static String _confirmVolunteerTaskID = "Confirm Volunteer";
 
     private String _url;
 
-    public RescueRequest( String url ){
+    public ConfirmVolunteer( String url ){
 
-        super( _rescueTaskID );
+        super( _confirmVolunteerTaskID );
         _url = url;
     }
 
@@ -29,7 +29,7 @@ public class RescueRequest extends AsyncServiceTask{
     protected String performTask(String... params) throws IOException, JSONException, URISyntaxException {
 
         String data = params[0];
-        Log.i("RescueRequest", data);
+        Log.i("VolunteerRequest", data);
         //String result = performPost( _url , data.toString(), null, null );
         return performPost( _url , data, null, null );
     }
