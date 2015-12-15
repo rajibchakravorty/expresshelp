@@ -77,7 +77,10 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
 
     private void collectReliefRequest(){
 
-        prepareRescueData();
+        boolean isValid = prepareRescueData();
+        if( !isValid ){
+            return;
+        }
 
         JSONObject data = _needHelpData.serializeData();
 
@@ -96,7 +99,11 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
     private void sendRescueRequest(){
 
         //collect the data
-        prepareRescueData();
+        boolean isValid = prepareRescueData();
+
+        if( !isValid ){
+            return;
+        }
 
         JSONObject data = _needHelpData.serializeData();
 
@@ -127,7 +134,7 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
     }
 
 
-    private void prepareRescueData(){
+    private boolean prepareRescueData(){
 
         //collect the data
         EditText homeNumber = ( EditText ) findViewById( R.id.home_number );
@@ -136,14 +143,14 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
         EditText city       = ( EditText ) findViewById( R.id.city        );
 
 
-        if( homeNumber.equals( NeedHelpData._defaultHome ) ||
-                streetName.equals(NeedHelpData._defaultStreet) ||
-                division.equals( NeedHelpData._defaultDivision ) ||
-                city.equals( NeedHelpData._defaultCity ) ){
+        if( homeNumber.getText().toString().equals( "" ) ||
+                streetName.getText().toString().equals("" ) ||
+                division.getText().toString().equals( "" ) ||
+                city.getText().toString().equals( "" ) ){
 
             Toast.makeText( this, _dataMissingError, Toast.LENGTH_LONG ).show();
 
-            return;
+            return false;
         }
 
 
@@ -163,7 +170,7 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
         _needHelpData.setNumOldPeople(totalOld.getText().toString());
         _needHelpData.setNumChildren(totalChild.getText().toString());
 
-        return;
+        return true;
 
     }
 

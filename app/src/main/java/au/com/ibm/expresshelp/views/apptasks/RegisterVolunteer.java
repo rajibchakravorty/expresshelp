@@ -29,6 +29,8 @@ import au.com.ibm.utility.date.DateDialogue;
  */
 public class RegisterVolunteer extends BaseView implements TaskReceiver, DatePickerDialog.OnDateSetListener{
 
+    public static String _prepareDataError = "Error preparing the JSON for volunteer confirmation";
+
     public static String _startDateMessage = "Arrival/Start Date?";
     public static String _endDateMessage = "Departure/End Date";
 
@@ -106,6 +108,9 @@ public class RegisterVolunteer extends BaseView implements TaskReceiver, DatePic
 
         String volunteerData = v.serializeData();
 
+        if( volunteerData == null ){
+            Toast.makeText( this, _prepareDataError, Toast.LENGTH_LONG );
+        }
 
         _pDialogue = new ProgressDialog( this );
         _pDialogue.setCancelable(false);
