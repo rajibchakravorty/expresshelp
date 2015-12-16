@@ -5,6 +5,7 @@
     <string name="need_relief_view_header">Relief Details</string>
     <string name="provide_help_view_header">Provide Help</string>
     <string name="be_volunteer_view_header">Confirm your detail</string>
+    <string name="material_help_provider_view_header">Provide Materials</string>
     <string name="about_view_header">About Us</string>
     <string name="support_view_header">Support us</string>
 
@@ -72,6 +73,18 @@
     <string name="work_team">Work in a team</string>
     <string name="lbl_confirm_volunteer">Confirm</string>
 
+    <string name="chk_provide_food">Food</string>
+    <string name="chk_provide_medicine">Medicine</string>
+    <string name="chk_provide_water">Water</string>
+    <string name="chk_provide_baby_food">Baby Food</string>
+    <string name="chk_provide_milk">Milk</string>
+    <string name="chk_provide_toiletries">Toiletries</string>
+    <string name="chk_provide_clothes">Clothes (General)</string>
+    <string name="chk_provide_female_clothes">Female underwear</string>
+    <string name="chk_provide_male_clothes">Male underwear</string>
+    <string name="lbl_provide_detail">Provide details, if any</string>
+    <string name="btn_confirm_mat_help">Confirm</string>
+
 
 
     <string name="menu_main_page">Main Page</string>
@@ -79,6 +92,8 @@
     <string name="menu_provide_help">Provide Help</string>
     <string name="menu_aboutus">About Us</string>
     <string name="menu_support">Support</string>
+
+    <string name="email_phone_hint">provide your email or phone</string>
 
     <string name="lbl_email">Our email</string>
     <string name="lbl_phone">Our Phone</string>

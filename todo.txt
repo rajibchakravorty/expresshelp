@@ -1,0 +1,4 @@
+* 2 interfaces in full - ProvideHelp->FinancialHelp, ProvideHelp->MaterialHelp
+* Check the HTTP Post library - there are deprecated functions used
+* In the "Volunteer registration" some sort of contact detail is needed? Phone # or email?
+

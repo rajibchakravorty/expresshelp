@@ -1,4 +1,4 @@
-package au.com.ibm.expresshelp;
+package org.expresshelp.expresshelp;
 
 import org.junit.Test;
 

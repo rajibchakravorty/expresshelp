@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="au.com.ibm.expresshelp">
+    package="org.expresshelp.expresshelp">
 
     <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
-        android:name="au.com.ibm.expresshelp.app.ExpressHelpApp"
+        android:name="org.expresshelp.expresshelp.app.ExpressHelpApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,42 +18,48 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".views.apptasks.NeedHelpView"
+            android:name="org.expresshelp.expresshelp.views.apptasks.NeedHelpView"
             android:label="@string/need_help_view_header"
             android:configChanges="orientation|screenSize">
         </activity>
 
         <activity
-            android:name=".views.apptasks.ProvideHelp"
+            android:name="org.expresshelp.expresshelp.views.apptasks.ProvideHelp"
             android:label="@string/provide_help_view_header"
             android:configChanges="orientation|screenSize">
         </activity>
 
         <activity
-            android:name=".views.apptasks.RegisterVolunteer"
+            android:name="org.expresshelp.expresshelp.views.apptasks.RegisterVolunteer"
             android:label="@string/be_volunteer_view_header"
             android:configChanges="orientation|screenSize">
         </activity>
 
         <activity
-            android:name=".views.apptasks.SupportView"
+            android:name="org.expresshelp.expresshelp.views.apptasks.SupportView"
             android:label="@string/support_view_header"
             android:configChanges="orientation|screenSize">
         </activity>
 
         <activity
-            android:name=".views.apptasks.NeedReliefView"
+            android:name="org.expresshelp.expresshelp.views.apptasks.NeedReliefView"
             android:label="@string/need_relief_view_header"
             android:configChanges="orientation|screenSize">
         </activity>
 
         <activity
-            android:name=".views.apptasks.AboutView"
+            android:name="org.expresshelp.expresshelp.views.apptasks.ProvideMaterialView"
+            android:label="@string/material_help_provider_view_header"
+            android:configChanges="orientation|screenSize">
+        </activity>
+
+        <activity
+            android:name="org.expresshelp.expresshelp.views.apptasks.AboutView"
             android:label="@string/about_view_header"
             android:configChanges="orientation|screenSize">
         </activity>
 
-        <activity android:name=".views.apptasks.MainActivity"
+        <activity android:name="org.expresshelp.expresshelp.views.apptasks.MainActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|screenSize">
             <intent-filter>
