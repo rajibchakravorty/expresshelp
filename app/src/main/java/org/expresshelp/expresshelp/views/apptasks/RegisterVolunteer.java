@@ -61,6 +61,11 @@ public class RegisterVolunteer extends BaseView implements TaskReceiver, DatePic
 
         setDefaultDates();
 
+        String emailPhone = ExpressHelpApp.getEmailPhone();
+
+        EditText emailPhoneInput = (EditText) findViewById( R.id.email_phone );
+        emailPhoneInput.setText(emailPhone);
+
         Button arrival = (Button) findViewById( R.id.btn_volun_start_date );
 
         arrival.setOnClickListener(new View.OnClickListener() {
