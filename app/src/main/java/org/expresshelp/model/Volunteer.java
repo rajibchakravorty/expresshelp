@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.model;
+package org.expresshelp.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,12 +28,12 @@ public class Volunteer {
                       boolean workAlone,
                       boolean workTeam ){
 
-        _emailPhone = emailPhone;
-        setArrivalDate( arrivalDate );
-        setDepartureDate( departureDate );
-        setRequireAccom( requireAccom );
-        setWorkAlone( workAlone );
-        setWorkTeam(workTeam);
+        _emailPhone    = emailPhone;
+        _arrivalDate   = arrivalDate;
+        _departureDate =  departureDate;
+        _requireAccom  = requireAccom;
+        _workAlone     = workAlone;
+        _workTeam      = workTeam;
     }
 
     public JSONObject serializeData(){
@@ -54,43 +54,5 @@ public class Volunteer {
         }
     }
 
-    public String getArrivalDate() {
-        return _arrivalDate;
-    }
 
-    public void setArrivalDate(String _arrivalDate) {
-        this._arrivalDate = _arrivalDate;
-    }
-
-    public String getDepartureDate() {
-        return _departureDate;
-    }
-
-    public void setDepartureDate(String _departureDate) {
-        this._departureDate = _departureDate;
-    }
-
-    public boolean isRequireAccom() {
-        return _requireAccom;
-    }
-
-    public void setRequireAccom(boolean _requireAccom) {
-        this._requireAccom = _requireAccom;
-    }
-
-    public boolean isWorkAlone() {
-        return _workAlone;
-    }
-
-    public void setWorkAlone(boolean _workAlone) {
-        this._workAlone = _workAlone;
-    }
-
-    public boolean isWorkTeam() {
-        return _workTeam;
-    }
-
-    public void setWorkTeam(boolean _workTeam) {
-        this._workTeam = _workTeam;
-    }
 }

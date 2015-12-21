@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.model;
+package org.expresshelp.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;

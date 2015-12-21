@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.views.apptasks;
+package org.expresshelp.views;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -16,9 +16,9 @@ import java.io.InputStream;
 import java.util.Properties;
 
 import org.expresshelp.asynctask.TaskReceiver;
-import org.expresshelp.expresshelp.R;
-import org.expresshelp.expresshelp.app.ExpressHelpApp;
-import org.expresshelp.expresshelp.model.NeedHelpData;
+import org.expresshelp.R;
+import org.expresshelp.app.ExpressHelpApp;
+import org.expresshelp.model.NeedHelpData;
 import org.expresshelp.tasks.ReliefRequest;
 
 /**

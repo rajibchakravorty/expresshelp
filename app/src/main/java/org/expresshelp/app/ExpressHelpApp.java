@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.app;
+package org.expresshelp.app;
 
 import android.app.Activity;
 import android.app.Application;

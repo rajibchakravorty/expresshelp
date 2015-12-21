@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.views.apptasks;
+package org.expresshelp.views;
 
 
 import android.app.ProgressDialog;
@@ -17,9 +17,9 @@ import java.io.InputStream;
 import java.util.Properties;
 
 import org.expresshelp.asynctask.TaskReceiver;
-import org.expresshelp.expresshelp.R;
-import org.expresshelp.expresshelp.app.ExpressHelpApp;
-import org.expresshelp.expresshelp.model.NeedHelpData;
+import org.expresshelp.R;
+import org.expresshelp.app.ExpressHelpApp;
+import org.expresshelp.model.NeedHelpData;
 import org.expresshelp.tasks.RescueRequest;
 
 /**
@@ -51,6 +51,11 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
     }
 
     private void setupUI(){
+
+        String emailPhone = ExpressHelpApp.getEmailPhone();
+
+        EditText emailPhoneInput = (EditText) findViewById( R.id.email_phone );
+        emailPhoneInput.setText(emailPhone);
 
         Button btnRescue = (Button) findViewById( R.id.btn_need_rescue );
 
@@ -134,6 +139,15 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
 
     private boolean prepareRescueData(){
 
+        EditText emailPhoneInput = (EditText) findViewById( R.id.email_phone );
+
+        if( emailPhoneInput.getText().toString().equals( "" ) ){
+            Toast.makeText( this, "Please provide a valid email address or phone number", Toast.LENGTH_LONG );
+            return false;
+        }
+
+        ExpressHelpApp.setEmailPhone( emailPhoneInput.getText().toString() );
+
         //collect the data
         EditText homeNumber = ( EditText ) findViewById( R.id.home_number );
         EditText streetName = ( EditText ) findViewById( R.id.street_name );
@@ -158,7 +172,7 @@ public class NeedHelpView extends BaseView implements TaskReceiver   {
         EditText totalChild  = ( EditText ) findViewById( R.id.num_child        );
 
 
-
+        _needHelpData.setEmailPhone( ExpressHelpApp.getEmailPhone() );
         _needHelpData.setHome(homeNumber.getText().toString());
         _needHelpData.setStreet(streetName.getText().toString());
         _needHelpData.setDivision(division.getText().toString());

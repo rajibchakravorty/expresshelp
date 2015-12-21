@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.views.apptasks;
+package org.expresshelp.views;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import android.widget.Toast;
 import org.json.JSONObject;
 
 import org.expresshelp.asynctask.TaskReceiver;
-import org.expresshelp.expresshelp.R;
-import org.expresshelp.expresshelp.app.ExpressHelpApp;
-import org.expresshelp.expresshelp.model.ProvideMaterialHelp;
+import org.expresshelp.R;
+import org.expresshelp.app.ExpressHelpApp;
+import org.expresshelp.model.ProvideMaterialHelp;
 import org.expresshelp.tasks.ConfirmMatHelp;
 import org.expresshelp.tasks.ConfirmVolunteer;
 

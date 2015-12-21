@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.views.apptasks;
+package org.expresshelp.views;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import org.expresshelp.expresshelp.R;
+import org.expresshelp.R;
 
 
 public class BaseView extends AppCompatActivity {

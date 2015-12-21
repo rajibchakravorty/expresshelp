@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.model;
+package org.expresshelp.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -8,6 +8,12 @@ import org.json.JSONObject;
  */
 public class NeedHelpData {
 
+    public static String _defaultHome     = "home number";
+    public static String _defaultStreet   = "street name";
+    public static String _defaultDivision = "division/locality";
+    public static String _defaultCity     = "city";
+
+    public static String _emailPhoneKey    = "email_phone";
     public static String _deviceLocationKey = "device_location";
     public static String _homeKey           = "home_number";
     public static String _streetKey         = "street";
@@ -17,10 +23,7 @@ public class NeedHelpData {
     public static String _numOldKey         = "num_old_people";
     public static String _numChildKey       = "num_child";
 
-    public static String _defaultHome     = "home number";
-    public static String _defaultStreet   = "street name";
-    public static String _defaultDivision = "division/locality";
-    public static String _defaultCity     = "city";
+
 
     public static String _foodKey         = "food";
     public static String _waterKey        = "water";
@@ -69,7 +72,11 @@ public class NeedHelpData {
     private String _medicineDetails = "";
     private String _otherDetails    = "";
 
+    private String _emailPhone;
+
     public void reset(){
+
+        _emailPhone         = "";
 
         _deviceLocation     = "";
         _home               = _defaultHome;
@@ -90,7 +97,8 @@ public class NeedHelpData {
         try{
             JSONObject data = new JSONObject( jsonData );
 
-            setHome     ( data.getString( _homeKey      ) );
+            _emailPhone     = data.getString( _emailPhoneKey );
+            setHome( data.getString( _homeKey      ) );
             setStreet   ( data.getString( _streetKey    ) );
             setDivision ( data.getString( _divisionKey  ) );
             setCity     ( data.getString( _cityKey      ) );
@@ -111,6 +119,8 @@ public class NeedHelpData {
 
         try {
             JSONObject data = new JSONObject();
+
+            data.put( _emailPhoneKey, _emailPhone );
 
             data.put( _homeKey    , _home     );
             data.put( _streetKey  , _street   );
@@ -151,123 +161,78 @@ public class NeedHelpData {
 
     }
 
-
-
-    public boolean isFoodNeeded() {
-        return _foodNeeded;
+    public void setEmailPhone( String emailPhone ){
+        _emailPhone = emailPhone;
     }
 
     public void setFoodNeeded(boolean foodNeeded) {
         this._foodNeeded = foodNeeded;
     }
 
-    public boolean isWaterNeeded() {
-        return _waterNeeded;
-    }
 
     public void setWaterNeeded(boolean waterNeeded) {
         this._waterNeeded = waterNeeded;
     }
 
-    public boolean isClothNeeded() {
-        return _clothNeeded;
-    }
 
     public void setClothNeeded(boolean clothNeeded) {
         this._clothNeeded = clothNeeded;
-    }
-
-    public boolean isMilkNeeded() {
-        return _milkNeeded;
     }
 
     public void setMilkNeeded(boolean milkNeeded) {
         this._milkNeeded = milkNeeded;
     }
 
-    public boolean isFemaleClothNeeded() {
-        return _femaleClothNeeded;
-    }
 
     public void setFemaleClothNeeded(boolean femaleClothNeeded) {
         this._femaleClothNeeded = femaleClothNeeded;
     }
 
-    public boolean isMaleClothNeeded() {
-        return _maleClothNeeded;
-    }
 
     public void setMaleClothNeeded(boolean maleClothNeeded) {
         this._maleClothNeeded = maleClothNeeded;
     }
 
-    public boolean isBabyFoodNeeded() {
-        return _babyFoodNeeded;
-    }
 
     public void setBabyFoodNeeded(boolean babyFoodNeeded) {
-        this._babyFoodNeeded = _babyFoodNeeded;
+        this._babyFoodNeeded = babyFoodNeeded;
     }
 
-    public boolean isSanitaryNeeded() {
-        return _sanitaryNeeded;
-    }
 
     public void setSanitaryNeeded(boolean sanitaryNeeded) {
         this._sanitaryNeeded = sanitaryNeeded;
     }
 
-    public boolean isDiaperNeeded() {
-        return _diaperNeeded;
-    }
 
     public void setDiaperNeeded(boolean diaperNeeded) {
         this._diaperNeeded = _diaperNeeded;
     }
 
-    public boolean isSoapNeeded() {
-        return _soapNeeded;
-    }
 
     public void setSoapNeeded(boolean soapNeeded) {
         this._soapNeeded = soapNeeded;
     }
 
-    public boolean isHandWashNeeded() {
-        return _handWashNeeded;
-    }
 
     public void setHandWashNeeded(boolean handWashNeeded) {
         this._handWashNeeded = handWashNeeded;
     }
 
-    public boolean isPhenylNeeded() {
-        return _phenylNeeded;
-    }
 
     public void setPhenylNeeded(boolean phenylNeeded) {
         this._phenylNeeded = _phenylNeeded;
     }
 
-    public String getOtherSpecials() {
-        return _otherSpecials;
-    }
 
     public void setOtherSpecials(String otherSpecials) {
         this._otherSpecials = otherSpecials;
     }
 
-    public String getMedicineDetails() {
-        return _medicineDetails;
-    }
 
     public void setMedicineDetails(String medicineDetails) {
         this._medicineDetails = medicineDetails;
     }
 
-    public String getOtherDetails() {
-        return _otherDetails;
-    }
 
     public void setOtherDetails(String otherDetails) {
         this._otherDetails = otherDetails;
@@ -275,66 +240,41 @@ public class NeedHelpData {
 
 
 
-    public String getDeviceLocation() {
-        return _deviceLocation;
-    }
-
     public void setDeviceLocation(String deviceLocation) {
         this._deviceLocation = deviceLocation;
     }
 
 
-    public String getHome() {
-        return _home;
-    }
 
     public void setHome(String home) {
         this._home = home;
     }
 
-    public String getStreet() {
-        return _street;
-    }
 
     public void setStreet(String street) {
         this._street = street;
     }
 
-    public String getDivision() {
-        return _division;
-    }
 
     public void setDivision(String division) {
         this._division = division;
     }
 
-    public String getCity() {
-        return _city;
-    }
 
     public void setCity(String city) {
         this._city = city;
     }
 
-    public String getNumTotalPeople() {
-        return _numTotalPeople;
-    }
 
     public void setNumTotalPeople(String numTotalPeople) {
         this._numTotalPeople = numTotalPeople;
     }
 
-    public String getNumOldPeople() {
-        return _numOldPeople;
-    }
 
     public void setNumOldPeople(String numOldPeople) {
         this._numOldPeople = numOldPeople;
     }
 
-    public String getNumChildren() {
-        return _numChildren;
-    }
 
     public void setNumChildren(String numChildren) {
         this._numChildren = numChildren;

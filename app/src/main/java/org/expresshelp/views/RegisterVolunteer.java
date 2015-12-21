@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.views.apptasks;
+package org.expresshelp.views;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
@@ -12,6 +12,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.expresshelp.utility.date.DateDialogue;
 import org.json.JSONObject;
 
 import java.util.Calendar;
@@ -19,13 +20,12 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 import org.expresshelp.asynctask.TaskReceiver;
-import org.expresshelp.expresshelp.R;
-import org.expresshelp.expresshelp.app.ExpressHelpApp;
-import org.expresshelp.expresshelp.model.Volunteer;
+import org.expresshelp.R;
+import org.expresshelp.app.ExpressHelpApp;
+import org.expresshelp.model.Volunteer;
 import org.expresshelp.tasks.ConfirmVolunteer;
 import org.expresshelp.tasks.ReliefRequest;
 import org.expresshelp.utility.Utility;
-import org.expresshelp.utility.date.DateDialogue;
 
 /**
  * Created by rajib on 13/12/15.

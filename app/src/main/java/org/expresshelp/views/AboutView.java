@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp.views.apptasks;
+package org.expresshelp.views;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import org.expresshelp.expresshelp.R;
-import org.expresshelp.expresshelp.app.ExpressHelpApp;
+import org.expresshelp.R;
+import org.expresshelp.app.ExpressHelpApp;
 
 /**
  * Created by rajib on 12/12/15.

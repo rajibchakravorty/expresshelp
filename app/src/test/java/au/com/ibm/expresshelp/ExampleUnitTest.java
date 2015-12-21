@@ -1,4 +1,4 @@
-package org.expresshelp.expresshelp;
+package org.expresshelp;
 
 import org.junit.Test;
 
