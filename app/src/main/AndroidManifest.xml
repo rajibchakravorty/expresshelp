@@ -24,6 +24,12 @@
         </activity>
 
         <activity
+            android:name=".views.ProvideFinanceView"
+            android:label="@string/financial_help_provider_view_header"
+            android:configChanges="orientation|screenSize">
+        </activity>
+
+        <activity
             android:name=".views.ProvideHelp"
             android:label="@string/provide_help_view_header"
             android:configChanges="orientation|screenSize">

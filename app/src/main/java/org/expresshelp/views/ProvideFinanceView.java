@@ -1,6 +1,8 @@
 package org.expresshelp.views;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +19,8 @@ import org.expresshelp.tasks.ConfirmMatHelp;
 import org.expresshelp.tasks.ConfirmPayDetail;
 import org.expresshelp.tasks.ConfirmVolunteer;
 import org.json.JSONObject;
+
+import java.net.URI;
 
 /**
  * Created by rchakrav on 22/12/2015.
@@ -46,6 +50,15 @@ public class ProvideFinanceView extends BaseView  implements TaskReceiver {
         EditText emailPhoneInput = (EditText) findViewById( R.id.email_phone );
         emailPhoneInput.setText(emailPhone);
 
+        Button payByGateway = ( Button ) findViewById( R.id.btn_pay_gateway );
+
+        payByGateway.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoPayGateway();
+            }
+        });
+
         Button confirm = (Button) findViewById( R.id.btn_confirm_pay );
 
         confirm.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +69,14 @@ public class ProvideFinanceView extends BaseView  implements TaskReceiver {
             }
         });
 
+
+    }
+
+    public void gotoPayGateway(){
+
+        Uri gatewayURI = Uri.parse( ExpressHelpApp._payGatwareURL );
+        Intent payIntent = new Intent( Intent.ACTION_VIEW, gatewayURI );
+        startActivity( payIntent );
 
     }
 
