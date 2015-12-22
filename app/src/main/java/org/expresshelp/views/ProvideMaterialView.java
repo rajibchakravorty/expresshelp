@@ -13,7 +13,7 @@ import org.json.JSONObject;
 import org.expresshelp.asynctask.TaskReceiver;
 import org.expresshelp.R;
 import org.expresshelp.app.ExpressHelpApp;
-import org.expresshelp.model.ProvideMaterialHelp;
+import org.expresshelp.model.MaterialHelp;
 import org.expresshelp.tasks.ConfirmMatHelp;
 import org.expresshelp.tasks.ConfirmVolunteer;
 
@@ -25,7 +25,7 @@ public class ProvideMaterialView extends BaseView implements TaskReceiver  {
     private ProgressDialog _pDialogue = null;
 
 
-    private ProvideMaterialHelp _materialHelpInfo = null;
+    private MaterialHelp _materialHelpInfo = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,7 +75,7 @@ public class ProvideMaterialView extends BaseView implements TaskReceiver  {
 
         _pDialogue = new ProgressDialog( this );
         _pDialogue.setCancelable(false);
-        _pDialogue.setTitle("Volunteer Registration");
+        _pDialogue.setTitle("Material Help");
         _pDialogue.setMessage("Sending Data");
         _pDialogue.show();
 
@@ -109,7 +109,7 @@ public class ProvideMaterialView extends BaseView implements TaskReceiver  {
          EditText  _detail                  = (EditText) findViewById( R.id.provide_txt_detail );
 
 
-        _materialHelpInfo = new ProvideMaterialHelp( ExpressHelpApp.getEmailPhone(),
+        _materialHelpInfo = new MaterialHelp( ExpressHelpApp.getEmailPhone(),
                                                      _canProvideFood.isChecked(),
                                                      _canProvideMedicine.isChecked(),
                                                      _canProvideWater.isChecked(),
@@ -130,7 +130,7 @@ public class ProvideMaterialView extends BaseView implements TaskReceiver  {
         _pDialogue.dismiss();
         _pDialogue = null;
 
-        if( source.equals( ConfirmVolunteer._confirmVolunteerTaskID ) ){
+        if( source.equals( ConfirmMatHelp._confirmMaterialHelpTaskID ) ){
 
             //check if the response is fine or not
             //take actions accordingly

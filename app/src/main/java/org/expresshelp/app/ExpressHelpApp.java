@@ -15,6 +15,7 @@ public class ExpressHelpApp extends Application {
     public static String _reliefURL = "http://bluestartkitservice.mybluemix.net/api/service";
     public static String _confirmVolunteerURL = "http://bluestartkitservice.mybluemix.net/api/service";
     public static String _materialHelpURL = "http://bluestartkitservice.mybluemix.net/api/service";
+    public static String _financialHelpURL = "http://bluestartkitservice.mybluemix.net/api/service";
 
     private static String _emailPhone = null;
 

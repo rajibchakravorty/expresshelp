@@ -6,7 +6,7 @@ import org.json.JSONObject;
 /**
  * Created by rajib on 16/12/15.
  */
-public class ProvideMaterialHelp {
+public class MaterialHelp {
 
     public static String _foodKey          = "food";
     public static String _medicineKey      = "medicine";
@@ -35,17 +35,17 @@ public class ProvideMaterialHelp {
     private String _matHelpDetail;
     private String _emailPhone;
 
-    public ProvideMaterialHelp( String emailPhone,
-                                boolean canProvideFood,
-                                boolean canProvideMedicine,
-                                boolean canProvideWater,
-                                boolean canProvideBabyFood,
-                                boolean canProvideToiletries,
-                                boolean canProvideClothes,
-                                boolean canProvideMilk,
-                                boolean canProvideFemaleClothes,
-                                boolean canProvideMaleClothes,
-                                String matHelpDetail ){
+    public MaterialHelp(String emailPhone,
+                        boolean canProvideFood,
+                        boolean canProvideMedicine,
+                        boolean canProvideWater,
+                        boolean canProvideBabyFood,
+                        boolean canProvideToiletries,
+                        boolean canProvideClothes,
+                        boolean canProvideMilk,
+                        boolean canProvideFemaleClothes,
+                        boolean canProvideMaleClothes,
+                        String matHelpDetail){
 
         _emailPhone              = emailPhone;
         _canProvideFood          = canProvideFood ;

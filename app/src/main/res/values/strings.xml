@@ -6,6 +6,7 @@
     <string name="provide_help_view_header">Provide Help</string>
     <string name="be_volunteer_view_header">Confirm your detail</string>
     <string name="material_help_provider_view_header">Provide Materials</string>
+    <string name="financial_help_provider_view_header">Provide Finance</string>
     <string name="about_view_header">About Us</string>
     <string name="support_view_header">Support us</string>
 
@@ -84,6 +85,19 @@
     <string name="chk_provide_male_clothes">Male underwear</string>
     <string name="lbl_provide_detail">Provide details, if any</string>
     <string name="btn_confirm_mat_help">Confirm</string>
+
+    <string name="btn_pay_external">Payment Gateway</string>
+
+    <string name="lbl_account_detail">Provide account detail</string>
+    <string name="hint_amount">provide donation amount</string>
+    <string name="hint_account_name">account name</string>
+    <string name="hint_account_num">account number</string>
+    <string name="hint_bank_name">bank name</string>
+    <string name="hint_bank_branch_name">branch name</string>
+    <string name="hint_bank_branch_address">branch address</string>
+    <string name="hint_bank_branch_city">branch city</string>
+    <string name="hint_bank_branch_state">branch state</string>
+    <string name="btn_confirm_pay_detail">Confirm Donation</string>
 
 
 

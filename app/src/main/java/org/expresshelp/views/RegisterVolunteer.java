@@ -219,7 +219,7 @@ public class RegisterVolunteer extends BaseView implements TaskReceiver, DatePic
         _pDialogue.dismiss();
         _pDialogue = null;
 
-        if( source.equals( ReliefRequest._reliefTaskID ) ){
+        if( source.equals( ConfirmVolunteer._confirmVolunteerTaskID ) ){
 
             //check if the response is fine or not
             //take actions accordingly

@@ -60,7 +60,8 @@ public class ProvideHelp extends BaseView {
     }
 
     public void navigateToFinancialHelpActivity(){
-        Toast.makeText( this, "Not implemented yet", Toast.LENGTH_LONG );
+        Intent intent = new Intent( ProvideHelp.this, ProvideFinanceView.class );
+        startActivity(intent);
     }
 
     public void navigateToMaterialHelpActivity(){
